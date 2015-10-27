@@ -40,7 +40,8 @@ class HomePageTest(unittest.TestCase):
         shopping_cart_icon = \
             self.driver.find_element_by_css_selector("div.header-minicart span.icon")
         shopping_cart_icon.click()
-
+        
+        #comment
         shopping_cart_status = \
             self.driver.find_element_by_css_selector("p.empty").text
         self.assertEqual("You have no items in your shopping cart.", shopping_cart_status)
