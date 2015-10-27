@@ -14,8 +14,8 @@ class SearchProductsOld(unittest.TestCase):
         desired_caps['platform'] = 'MAC'
         desired_caps['browserName'] = 'chrome'
 
-        self.driver = \
-            webdriver.Remote('http://192.168.0.3:4444/wd/hub',desired_caps)
+        #self.driver = \
+        #    webdriver.Remote('http://192.168.0.3:4444/wd/hub',desired_caps)
         self.driver.get('http://demo.magentocommerce.com/')
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
